@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+
+<style>
+
+
+</style>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="hazardRisk.js"></script>
+    <script src="/surveyDescription.js"></script>
+    <script src="/01_task.js"></script>
+
+    
+  
+
+<script>
+
+    /*https://stackoverflow.com/questions/71484593/converting-the-html-page-to-a-downloadable-pdf-with-a-button-click */
+    const btn = document.getElementById("button");
+    btn.addEventListener("click", function () {
+        var element = document.getElementById('nested-company-name');
+        html2pdf().from(element).save('filename.pdf');
+    });
+
+    </script>
+    
+    
+
+<script>
+
+        
+        /*HTML2PDF KOOPMAN */
+/*
+        html2pdf(element);
+        var opt = {
+            margin: 1,
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+
+        */
+
+    </script>
+
+    <script>
+
+
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+    
+    <div id="html2pdf-element" class="content">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+
+var  element = document.getElementById("html2pdf-element");
+
+function html2pdf() {
+setTimeout(() => {
+html2pdf(element, {
+margin: 1,
+filename: 'Åkenes_Solutions',
+html2canvas: {scale: 2 , logging: true, dpi: 1200, letterRendering: true },
+jsPDF: {unit: 'in', format: 'letter', orientation: 'landscape'}
+});
+
+}, 100);
+}
+
+
+    </script>
+ 
+
+
+ 
+
+
+        <header>
+            <div class="nested-company-name">
+
+                <h2>Risk Assessment – Generic Work at Height</h2>
+                <input type="text" placeholder="company-name">
+
+
+            </div>
+
+
+
+        </header>
+
+        <main>
+
+
+
+            <div class="nested-description-of-work">
+                <p id="work-p">Hazard</p>
+
+
+
+                <input class="input-placeholder" type="text" placeholder="please comment">
+
+                <p>Location</p>
+
+                <textarea class="placeholder" type="text" placeholder="please comment"></textarea>
+
+                <p>What measures/equipment are you using to
+                    prevent a fall, or to minimise the distance of a
+                    fall?
+                </p>
+
+                <textarea class="placeholder" type="text" placeholder="please comment"></textarea>
+
+                <p>Description of Work at Height hazards</p>
+
+
+                <ul>
+
+                    <li>
+                        <p>Falls from height.</p>
+                    </li>
+                    <li>
+                        <p>Use of unsafe of inappropriate equipment.</p>
+                    </li>
+                    <li>
+                        <p>Accessing fragile surfaces.</p>
+                    </li>
+                    <li>
+                        <p>Wearing inappropriate clothing and footwear.</p>
+                    </li>
+                    <li>
+                        <p>Slippery uneven surfaces.</p>
+                    </li>
+                    <li>
+                        <p>Poor weather or lighting conditions.</p>
+                    </li>
+                    <li>
+                        <p>Height of fall.</p>
+                    </li>
+                    <li>
+                        <p>Lack of experience/training (contact healthandsafty@soas.ac.uk for support).</p>
+                    </li>
+
+                    <li>
+                        <p>The hazards will differ depending on the location, activity being carried out, equipment
+                            being
+                            used and height of fall and therefore
+                            any hazards or controls not addressed above or below should be included at the end of the
+                            generic risk assessment</p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </main>
+
+        <section>
+
+
+
+            <div class="nested-section-of-overskrift">
+
+                <!--DESCRIPTION -->
+
+                <div id="nested-task">
+                    <script>
+                        document.getElementById("nested-task").innerHTML = taskObject[0].toString();
+
+                    </script>
+
+                </div>
+
+                <p><strong>hazard</strong></p>
+
+                <p>Yes/No</p>
+
+                <p><strong>What are you already doing <br> Generic Controls</strong></p>
+
+                <p><strong>Actioned</strong> <br> Yes No</p>
+
+                <p>Further Action Needed</p>
+
+            </div>
+
+            <div class="nested-section-of-utfylling">
+
+                <!--Task 1 QUESTION 1 -->
+
+                <p id="task1-q1"></p>
+                <script>
+                    document.getElementById("task1-q1").innerHTML =
+                        hazardObject[0].toString();
+                </script>
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="hazard" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <p id="task1-d1">
+                    <script>
+                        document.getElementById("task1-d1").innerHTML =
+                            surveyDescriptionObject[14].toString();
+                    </script>
+                </p>
+
+
+
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="ladders" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+                <!--QUESTION 2 -->
+
+                <p id="task1-q2"> </p>
+                <script>document.getElementById("task1-q2").innerHTML =
+                        hazardObject[1].toString();</script>
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="hazard" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <p id="task1-d2"> </p>
+                <script>
+                    document.getElementById("task1-d2").innerHTML =
+                        surveyDescriptionObject[15].toString();
+                </script>
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="ladders" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+                <!--QUESTION 3 -->
+
+                <p id="task1-q3"> </p>
+                <script>
+                    document.getElementById("task1-q3").innerHTML =
+                        hazardObject[2].toString();
+                </script>
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task1-q3" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task1-d3"></p>
+                <script>
+                    document.getElementById("task1-d3").innerHTML =
+                        surveyDescriptionObject[16].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task1-d3-yesno" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+                <!--QUESTION 4 -->
+
+                <p id="task1-q4"> </p>
+                <script>
+                    document.getElementById("task1-q4").innerHTML =
+                        hazardObject[3].toString();
+                </script>
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task1-q4" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task1-d4"></p>
+                <script>
+                    document.getElementById("task1-d4").innerHTML =
+                        surveyDescriptionObject[17].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task1-d4-yesno" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+                <!--QUESTION 5 -->
+
+                <p id="task1-q5"> </p>
+                <script>
+                    document.getElementById("task1-q5").innerHTML =
+                        hazardObject[4].toString();
+                </script>
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task1-q5" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task1-d5"></p>
+                <script>
+                    document.getElementById("task1-d5").innerHTML =
+                        surveyDescriptionObject[18].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task1-d5-yesno" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+                <!--QUESTION 6 -->
+
+                <p id="task1-q6"> </p>
+                <script>
+                    document.getElementById("task1-q6").innerHTML =
+                        hazardObject[5].toString();
+                </script>
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task1-q6" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task1-d6"></p>
+                <script>
+                    document.getElementById("task1-d6").innerHTML =
+                        surveyDescriptionObject[19].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task1-d6-yesno" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+                <!--Task 1 QUESTION 7 -->
+
+                <p id="task1-q7"> </p>
+                <script>
+                    document.getElementById("task1-q7").innerHTML =
+                        hazardObject[6].toString();
+                </script>
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task1-q7" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task1-d7"></p>
+                <script>
+                    document.getElementById("task1-d7").innerHTML =
+                        surveyDescriptionObject[20].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task1-d7-yesno" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+        <nav>
+
+
+
+
+
+            <div class="nested-section-of-overskrift">
+
+                <!--DESCRIPTION TASK 2 -->
+
+
+
+                <p><strong>hazard</strong></p>
+
+                <p>Yes/No</p>
+
+                <p><strong>What are you already doing <br> Generic Controls</strong></p>
+
+                <p><strong>Actioned</strong> <br> Yes No</p>
+
+                <p>Further Action Needed</p>
+
+            </div>
+
+            <div id="nested-task2">
+                <script>
+                    document.getElementById("nested-task2").innerHTML = taskObject[1].toString();
+
+                </script>
+
+            </div>
+
+
+            <!--TASK 2 q1-->
+
+            <div class="nested-section-of-utfylling">
+
+
+                <p id="task2-q1"> </p>
+                <script>
+                    document.getElementById("task2-q1").innerHTML =
+                        hazardObject[7].toString();
+                </script>
+
+
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task2-q1" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task2-d1"></p>
+                <script>
+                    document.getElementById("task2-d1").innerHTML =
+                        surveyDescriptionObject[11].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task2-d1-yesno" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+
+                <!-- Q2-->
+
+                <p id="task2-q2"> </p>
+                <script>
+                    document.getElementById("task2-q2").innerHTML =
+                        hazardObject[8].toString();
+                </script>
+
+
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task2-q2" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task2-d2"></p>
+                <script>
+                    document.getElementById("task2-d2").innerHTML =
+                        surveyDescriptionObject[12].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task2-d2-yesno" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+                <!-- Q3-->
+
+                <p id="task2-q3"> </p>
+                <script>
+                    document.getElementById("task2-q3").innerHTML =
+                        hazardObject[9].toString();
+                </script>
+
+
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task2-q3" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task2-d3"></p>
+                <script>
+                    document.getElementById("task2-d3").innerHTML =
+                        surveyDescriptionObject[12].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task2-d3-yesno" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+
+
+                <!-- Q4-->
+
+                <p id="task2-q4"> </p>
+                <script>
+                    document.getElementById("task2-q4").innerHTML =
+                        hazardObject[10].toString();
+                </script>
+
+
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task2-q4" name="scales">
+                        <label for="scales">YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task2-d4"></p>
+                <script>
+                    document.getElementById("task2-d4").innerHTML =
+                        surveyDescriptionObject[""].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task2-d4-yesno" name="scales">
+                        <label for="scales">YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+
+
+
+            </div>
+            <div class="nested-section-of-overskrift">
+
+                <!--DESCRIPTION TASK 2 -->
+
+
+
+                <p><strong>hazard</strong></p>
+
+                <p>Yes/No</p>
+
+                <p><strong>What are you already doing <br> Generic Controls</strong></p>
+
+                <p><strong>Actioned</strong> <br> Yes No</p>
+
+                <p>Further Action Needed</p>
+
+            </div>
+
+            <div id="nested-task3">
+                <script>
+                    document.getElementById("nested-task3").innerHTML = taskObject[2].toString();
+
+                </script>
+
+            </div>
+
+            <!--Task 3 QUESTION 1 -->
+
+            <div class="nested-section-of-utfylling">
+
+                <p id="task3-q1"></p>
+                <script>
+                    document.getElementById("task3-q1").innerHTML =
+                        hazardObject[11].toString();
+                </script>
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="hazard" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <p id="task3-d1">
+                    <script>
+                        document.getElementById("task3-d1").innerHTML =
+                            surveyDescriptionObject[15].toString();
+                    </script>
+                </p>
+
+
+
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="ladders" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+
+
+                <!--Task 3 QUESTION 2 -->
+
+
+
+                <p id="task3-q2"></p>
+                <script>
+                    document.getElementById("task3-q2").innerHTML =
+                        hazardObject[12].toString();
+                </script>
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="hazard" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <p id="task3-d2">
+                    <script>
+                        document.getElementById("task3-d2").innerHTML =
+                            surveyDescriptionObject[16].toString();
+                    </script>
+                </p>
+
+
+
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="ladders" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+
+
+                <!--Task 3 QUESTION 3 -->
+
+
+
+                <p id="task3-q3"></p>
+                <script>
+                    document.getElementById("task3-q3").innerHTML =
+                        hazardObject[13].toString();
+                </script>
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="hazard" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <p id="task3-d4">
+                    <script>
+                        document.getElementById("task3-d4").innerHTML =
+                            surveyDescriptionObject[17].toString();
+                    </script>
+                </p>
+
+
+
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="ladders" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+                <!--Task 3 QUESTION 4 -->
+
+
+
+                <p id="task3-q4"></p>
+                <script>
+                    document.getElementById("task3-q4").innerHTML =
+                        hazardObject[14].toString();
+                </script>
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="hazard" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <p id="task3-d4">
+                    <script>
+                        document.getElementById("task3-d4").innerHTML =
+                            surveyDescriptionObject[18].toString();
+                    </script>
+                </p>
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="ladders" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+            </div>
+
+
+            <!--TASK 4 -->
+
+            <!--TASK 4 q1-->
+
+
+            <div class="nested-section-of-overskrift">
+
+                <!--DESCRIPTION TASK 4 -->
+
+
+
+                <p><strong>hazard</strong></p>
+
+                <p>Yes/No</p>
+
+                <p><strong>What are you already doing <br> Generic Controls</strong></p>
+
+                <p><strong>Actioned</strong> <br> Yes No</p>
+
+                <p>Further Action Needed</p>
+
+            </div>
+
+            <div id="nested-task4">
+                <script>
+                document.getElementById("nested-task4").innerHTML = taskObject[3].toString();
+
+                </script>
+
+            </div>
+
+
+            <!--TASK 2 q1-->
+
+            <div class="nested-section-of-utfylling">
+
+
+                <p id="task4-q1"> </p>
+                <script>
+                document.getElementById("task4-q1").innerHTML =
+                    hazardObject[0].toString();
+                </script>
+
+
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task4-q1" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task4-d1"></p>
+                <script>
+                document.getElementById("task4-d1").innerHTML =
+                    surveyDescriptionObject[0].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task4-d1-yesno" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+
+                <!-- Q2-->
+
+                <p id="task4-q2"> </p>
+                <script>
+                document.getElementById("task4-q2").innerHTML =
+                    hazardObject[1].toString();
+                </script>
+
+
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task4-q2" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task4-d2"></p>
+                <script>
+                document.getElementById("task4-d2").innerHTML =
+                    surveyDescriptionObject[1].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task4-d2-yesno" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+                <!-- Q3-->
+
+                <p id="task4-q3"> </p>
+                <script>
+                document.getElementById("task4-q3").innerHTML =
+                    hazardObject[2].toString();
+                </script>
+
+
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task2-q3" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task4-d3"></p>
+                <script>
+                document.getElementById("task4-d3").innerHTML =
+                    surveyDescriptionObject[2].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task4-d3-yesno" name="scales" checked>
+                        <label for="scales" checked>YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+
+
+                <!-- Q4-->
+
+                <p id="task4-q4"> </p>
+                <script>
+                document.getElementById("task4-q4").innerHTML =
+                    hazardObject[3].toString();
+                </script>
+
+
+
+                <fieldset>
+
+
+                    <div>
+                        <input type="checkbox" id="yesno-task4-q4" name="scales">
+                        <label for="scales">YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+
+
+
+                </fieldset>
+
+                <p id="task4-d4"></p>
+                <script>
+                document.getElementById("task4-d4").innerHTML =
+                    surveyDescriptionObject[3].toString();
+                </script>
+
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="task4-d4-yesno" name="scales">
+                        <label for="scales">YES</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">NO</label>
+                    </div>
+                </fieldset>
+
+                <textarea name="utfylling" id="" cols="30" rows="5"></textarea>
+
+
+
+
+            </div>
+
+        </nav>
+
+        <footer>
+
+            <button id="button"> Generate PDF </button>
+            
+           
+        </footer>
+
+       
+        
+    </div>
+    
+</body>
+
+<main>
+
+
+   
+  
+
+
+</main>
