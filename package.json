@@ -1,0 +1,20 @@
+{
+  "name": "js_css_portfolioproject",
+  "version": "1.0.0",
+  "description": "This website is always updating. \r Code stems from jdnoc, traversy media and other sources of inspiration\r Currently used in domain rubenaakenes.com, for learning and business purposes.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakenes/-js-css-portfolioproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakenes/-js-css-portfolioproject/issues"
+  },
+  "homepage": "https://github.com/rakenes/-js-css-portfolioproject#readme"
+}
